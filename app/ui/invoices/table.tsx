@@ -12,7 +12,7 @@ export default async function InvoicesTable({
   currentPage: number;
 }) {
   const invoices = await fetchFilteredInvoices(query, currentPage);
-
+console.log('%cnextjs-dashboard/app/ui/invoices/table.tsx:15 query, currentPage', 'color: #007acc;', query, currentPage);
   return (
     <div className="mt-6 flow-root">
       <div className="inline-block min-w-full align-middle">
